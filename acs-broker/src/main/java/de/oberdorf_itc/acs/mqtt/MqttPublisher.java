@@ -157,7 +157,7 @@ public class MqttPublisher {
      */
     public void publishStatus(String readerIp, StatusEvent event) throws MqttException {
         logger.trace("Method: publishStatus(String readerIp = {}, StatusEvent event = {})", readerIp, event);
-        String topic   = this.configuration.get("MQTT_TOPIC_PREFIX") + "/" + readerIp + "/status";
+        String topic   = this.configuration.get("MQTT_TOPIC_PREFIX") + "/entrypoints/" + readerIp + "/status";
         String payload = JsonUtil.toJson(event);
         metrics.get("reader_notification_events").labelValues(readerIp).inc();
         publish(topic, payload);
@@ -174,7 +174,7 @@ public class MqttPublisher {
      */
     public void publishAccess(String readerIp, AccessEvent event) throws MqttException {
         logger.trace("Method: publishAccess(String readerIp = {}, AccessEvent event = {})", readerIp, event);
-        String topic   = this.configuration.get("MQTT_TOPIC_PREFIX") + "/" + readerIp + "/access";
+        String topic   = this.configuration.get("MQTT_TOPIC_PREFIX") + "/entrypoints/" + readerIp + "/access";
         String payload = JsonUtil.toJson(event);
         if (event.getStatus() != null && event.getStatus().equals("granted")) {
             metrics.get("mqtt_messages_sent_access_granted").labelValues(readerIp).inc();
