@@ -49,4 +49,5 @@ jobs:
           distribution: 'temurin'
       - name: mvn test
         run: |
+          cd acs-broker
           mvn test -B

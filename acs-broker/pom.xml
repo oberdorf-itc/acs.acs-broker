@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.oberdorf-itc</groupId>
+    <groupId>de.oberdorf-itc.acs</groupId>
     <artifactId>acs-broker</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>3.0.0</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <url>https://www.oberdorf-itc.de/</url>
     <properties>
