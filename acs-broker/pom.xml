@@ -16,6 +16,22 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
+        <!-- FEIG Elektronic GmbH libraries -->
+        <dependency>
+            <groupId>de.feig</groupId>
+            <artifactId>fedm-java-api</artifactId>
+            <version>7.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>de.feig</groupId>
+            <artifactId>fedm-service-java-api</artifactId>
+            <version>11.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>de.feig</groupId>
+            <artifactId>fedm-funit-java-api</artifactId>
+            <version>1.1.0</version>
+        </dependency>
         <!-- Logging -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>

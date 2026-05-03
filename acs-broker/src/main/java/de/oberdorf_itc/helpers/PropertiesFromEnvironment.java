@@ -18,6 +18,7 @@ public class PropertiesFromEnvironment {
      */
     static {
         // Feig Listener configuration
+        configObjects.add(new ConfigObject("FEIG_LISTENER_ADDR", "string", "0.0.0.0"));
         configObjects.add(new ConfigObject("FEIG_LISTENER_PORT", "int", "10005"));
         configObjects.add(new ConfigObject("FEIG_NOTIFY_INVENTORY_TIMEOUT", "int", "30"));
         configObjects.add(new ConfigObject("FEIG_NOTIFY_WAITING_FOR_ACK", "int", "1"));
