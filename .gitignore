@@ -1,5 +1,6 @@
 .envrc
 libs
+feig-docs
 .secrets
 .vscode
 .lck
